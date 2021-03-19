@@ -127,7 +127,6 @@ function renderDetail(data){
     showDetail.innerHTML='';
     const detailBlock = generateModalDetail(data);
     showDetail.appendChild(detailBlock);
-    console.log('Data: ',data)
 }
 
 document.onclick = function(event){
@@ -156,9 +155,7 @@ document.onclick = function(event){
                     showVideo.appendChild(iframeContainer);
                 }
                 })
-            .catch((error) => {
-                console.log('Error: ',error)
-        })
+            .catch((error) => {})
     }
 }
 
@@ -167,9 +164,7 @@ function detailPage(value){
     fetch(detailUrl)
         .then((res) => res.json())
         .then((data) => {renderDetail(data);})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
 }
 
 // Home Page Show
@@ -212,9 +207,7 @@ function topRated(){
     fetch(topRatedUrl)
         .then((res) => res.json())
         .then((data) => {renderTopRated(data)})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
 }
 
 // Coming Soon
@@ -231,9 +224,7 @@ function comingSoon(){
     fetch(comingSoonUrl)
         .then((res) => res.json())
         .then((data) => {renderComingSoon(data)})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
 }
 
 // Popular
@@ -250,9 +241,7 @@ function popular(){
     fetch(popularUrl)
         .then((res) => res.json())
         .then((data) => {renderPopular(data)})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
 }
 
 // Now Showing
@@ -270,9 +259,7 @@ function nowShowing(){
     fetch(nowShowingUrl)
         .then((res) => res.json())
         .then((data) => {renderNowShowing(data)})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
 }
 
 //Initialize Search
