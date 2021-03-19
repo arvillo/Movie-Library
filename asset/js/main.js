@@ -41,7 +41,7 @@ function createMovieContainer(movies){
 }
 
 function renderSearch(data){
-    searchMovie.innerHTML='<h3 class="text-white" style="margin:20px"> Search for ' + valueSearch[1] + '</h3>'
+    searchMovie.innerHTML='<h3> Search for ' + valueSearch[1] + '</h3>'
     const movies = data.results;
     const movieBlock = createMovieContainer(movies);
     searchMovie.appendChild(movieBlock);
