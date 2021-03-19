@@ -18,7 +18,7 @@ const showDetail = document.querySelector('#movies-detail');
 function movieSection(movies){
     return movies.map((movie) => {
         if(movie.poster_path){
-            return `<div class="card bg-dark text-white" style="width: 150px;">
+            return `<div class="card bg-dark text-white" style="width: 200px;">
                 <img src=${imageUrl + movie.poster_path} data-movie-id=${movie.id} class="card-img-top"/>
                 <div class="card-body row align-items-end">
                     <h5 class="card-title">${movie.title}</h5>
