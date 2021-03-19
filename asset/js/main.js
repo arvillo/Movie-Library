@@ -262,7 +262,7 @@ function nowShowing(){
 
 //Initialize Search
 searchStart(valueSearch[1]);
-detailPage(valueSearch[1]);
+if(valueSearch[1]!=null) detailPage(valueSearch[1]);
 nowShowing();
 popular();
 topRated();
