@@ -4,7 +4,7 @@ html,body{
 
 #home-page, #now-showing-page,
 #popular-page, #coming-soon-page,
-#top-rated-page{
+#top-rated-page, #movies-search{
     margin: 20px;
 }
 
