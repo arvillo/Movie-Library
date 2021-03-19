@@ -72,9 +72,7 @@ function searchStart(value){
     fetch(searchUrl)
         .then((res) => res.json())
         .then((data) => {renderSearch(data)})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
 }
 
 //Detail
