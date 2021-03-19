@@ -45,7 +45,6 @@ function renderSearch(data){
     const movies = data.results;
     const movieBlock = createMovieContainer(movies);
     searchMovie.appendChild(movieBlock);
-    console.log('Data: ',data)
 }
 
 searchButton.onclick = function(event){
@@ -60,9 +59,7 @@ searchButton.onclick = function(event){
     fetch(searchUrl)
         .then((res) => res.json())
         .then((data) => {renderSearch(data)})
-        .catch((error) => {
-            console.log('Error: ',error)
-        })
+        .catch((error) => {})
     searchValue.value = '';
 }
 
@@ -260,9 +257,14 @@ function nowShowing(){
         .catch((error) => {})
 }
 
+function validateId(input){
+    let isnum = /^\d+$/.test(input);
+    return isnum;
+}
+
 //Initialize Search
 searchStart(valueSearch[1]);
-if(valueSearch[1]!=null) detailPage(valueSearch[1]);
+if(valueSearch[1]!=null || validateId(valueSearch[1])) detailPage(valueSearch[1]);
 nowShowing();
 popular();
 topRated();
