@@ -24,7 +24,7 @@ html,body{
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: stretch;
 	align-content: stretch;
 }
@@ -35,7 +35,7 @@ html,body{
     display : flex;
     justify-content: center;
     align-items: center;
-    margin: 15px;
+    margin: 10px;
     transition: 250ms all;
 }
 
@@ -50,7 +50,7 @@ html,body{
 #home-page .card img, #now-showing-page .card img,
 #popular-page .card img, #coming-soon-page .card img,
 #top-rated-page .card img{
-    width: 150px;
+    width: 200px;
 }
 
 #movie-searchable{
