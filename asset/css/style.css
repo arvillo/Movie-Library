@@ -50,7 +50,7 @@ html,body{
 #home-page .card img, #now-showing-page .card img,
 #popular-page .card img, #coming-soon-page .card img,
 #top-rated-page .card img{
-    width: 200px;
+    width: 150px;
 }
 
 #movie-searchable{
@@ -79,7 +79,7 @@ html,body{
 }
 
 .movie .card img{
-    width: 200px;
+    width: 150px;
 }
 
 .movie .card:hover{
