@@ -1,0 +1,120 @@
+html,body{
+    background-color: #2b2b2b;
+}
+
+#home-page, #now-showing-page,
+#popular-page, #coming-soon-page,
+#top-rated-page{
+    margin: 20px;
+}
+
+#home-page h3, #now-showing-page h3,
+#popular-page h3, #coming-soon-page h3,
+#top-rated-page h3{
+    color: #2b2b2b;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.homepage-movie h5{
+    font-size: 15px;
+}
+
+.homepage-movie{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+#home-page .card, #now-showing-page .card,
+#popular-page .card, #coming-soon-page .card,
+#top-rated-page .card{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    transition: 250ms all;
+}
+
+#home-page .card:hover, #now-showing-page .card:hover,
+#popular-page .card:hover, #coming-soon-page .card:hover,
+#top-rated-page .card:hover{
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#home-page .card img, #now-showing-page .card img,
+#popular-page .card img, #coming-soon-page .card img,
+#top-rated-page .card img{
+    width: 150px;
+}
+
+#movie-searchable{
+    display : flex;
+    margin-left: 30px;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.movie{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch;
+}
+
+.movie .card{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: 250ms all;
+}
+
+.movie .card img{
+    width: 150px;
+}
+
+.movie .card:hover{
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.movie .card-body{
+    top: 0;
+}
+
+.detail-movie{
+    display: flex;
+}
+
+.detail-movie img,.detail-movie .detail-desc{
+    margin: 20px;
+}
+
+.detail-movie #display-video{
+    display: flex;
+    margin: 20px;
+    height: 400px;
+}
+
+#display-video iframe{
+    margin: 5px 10px;
+}
+
+#footer{
+	padding: 10px;
+}
+
+#footer h5{
+    padding: 10px;
+
+}
